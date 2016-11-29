@@ -8,8 +8,11 @@ RUN zypper --non-interactive --quiet in tar curl net-tools ca-certificates git
 # Minimal set of tools for compiling and linking applications and Tools and libraries for software development using C/C++ and other
 RUN zypper --non-interactive in patterns-openSUSE-devel_basis patterns-openSUSE-devel_C_C++
 
-RUN curl --insecure --silent https://nodejs.org/dist/v7.2.0/node-v7.2.0-linux-x64.tar.xz | xz -d | tar x -C /usr/local
-RUN ln -s --directory -v /usr/local/node-v7.2.0-linux-x64 /usr/local/nodejs
+# language
+RUN zypper --non-interactive --quiet in bundle-lang-common-ru bundle-lang-common-en glibc-locale
+
+RUN curl --insecure --silent https://nodejs.org/dist/v6.9.1/node-v6.9.1-linux-x64.tar.xz | xz -d | tar x -C /usr/local
+RUN ln -s --directory -v /usr/local/node-v6.9.1-linux-x64 /usr/local/nodejs
 RUN echo "export PATH=\$PATH:/usr/local/nodejs/bin" >> /etc/bash.bashrc
 RUN cp -v /etc/login.defs /etc/login.defs.origin && cat /etc/login.defs.origin | grep -v ENV_PATH > /etc/login.defs.tmp
 RUN cat /etc/login.defs.tmp | grep -v ENV_ROOTPATH > /etc/login.defs && rm /etc/login.defs.tmp
