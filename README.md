@@ -4,8 +4,6 @@
 
 Based on openSUSE Tumbleweed x64
 
-NodeJS v6.9.1
-
-TypeScript
-
-CoffeeScript
+NodeJS v10.1.0
+Angular: 6.0.2
+Angular CLI: 6.0.3
