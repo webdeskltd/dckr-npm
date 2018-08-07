@@ -1,5 +1,5 @@
 #!/bin/bash
 
-DIR=/Users/kallisto/Projects/tubecj/tcjtowerfront
+DIR=`pwd`
 
 docker run -i -t --rm -v ${DIR}:/src webdeskltd/npm:latest

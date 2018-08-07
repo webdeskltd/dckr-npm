@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker build --rm -t tubecj/npm-angular:latest .
+docker build --rm -t webdeskltd/npm:latest .
