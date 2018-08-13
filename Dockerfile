@@ -35,8 +35,9 @@ RUN echo "ENV_PATH PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/nodejs/bin" >> /
 RUN echo "ENV_ROOTPATH PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/nodejs/bin" >> /etc/login.defs
 
 ENV PATH /usr/local/nodejs/bin:$PATH
-RUN npm install -g --silent npm-check@latest
-RUN npm install -g --silent --unsafe-perm @angular/cli@latest
+RUN npm install -g --silent --unsafe-perm npm@6.3.0
+RUN npm install -g --silent npm-check@5.8.0
+RUN npm install -g --silent --unsafe-perm @angular/cli@6.1.3
 
 ADD build.bash /usr/sbin/build
 RUN chmod 755 /usr/sbin/build
