@@ -4,7 +4,7 @@
 
 Based on openSUSE Tumbleweed x64
 
-NodeJS 10.8.0
-npm: 6.3.0
-Angular: 6.1.2
-Angular CLI: 6.1.3
+NodeJS 10.9.0
+npm: 6.4.0
+Angular: 6.1.4
+Angular CLI: 6.1.5
