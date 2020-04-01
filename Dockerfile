@@ -1,4 +1,4 @@
-FROM opensuse/tumbleweed:latest
+FROM opensuse/leap:latest
 MAINTAINER Alex Geer <monoflash@gmail.com>
 
 RUN echo "update 01.04.2020"
@@ -15,6 +15,8 @@ RUN localedef --charmap=UTF-8 --inputfile=ru_RU $LANG
 ## Установка готовых паттернов
 ## - Base System
 RUN zypper --non-interactive --quiet in -t pattern base
+## - Enhanced Base System
+RUN zypper --non-interactive --quiet in -t pattern enhanced_base
 ## - Software Management
 RUN zypper --non-interactive --quiet in -t pattern sw_management
 ## - Base Development

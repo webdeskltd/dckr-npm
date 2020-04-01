@@ -1,10 +1,9 @@
-# npm based on openSuse:tumbleweed
+# npm based on openSuse:Leap
 -
 [![](https://images.microbadger.com/badges/image/webdeskltd/npm.svg)](https://microbadger.com/images/webdeskltd/npm "Get your own image badge on microbadger.com") [![](https://images.microbadger.com/badges/version/webdeskltd/npm.svg)](https://microbadger.com/images/webdeskltd/npm "Get your own version badge on microbadger.com")
 
-Based on openSUSE Tumbleweed x64
+Based on openSUSE Leap x64
 
-NodeJS 10.9.0
-npm: 6.4.0
-Angular: 6.1.4
-Angular CLI: 6.1.5
+NodeJS 12.16.1
+npm: 6.14.4
+Angular CLI: 9.1.0
